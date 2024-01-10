@@ -44,3 +44,6 @@ function displayDetails(actorInfo, key) {
 
 //code here
 
+console.log(displayDetails(actorInformation, 'firstName'))
+console.log(displayDetails(actorInformation, 'lastName'))
+console.log(displayDetails(actorInformation, 'movies'))
