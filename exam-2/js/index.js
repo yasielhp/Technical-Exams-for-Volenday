@@ -37,3 +37,8 @@ function calcAvgHeight(data) {
 
   return totalHeight / count;
 }
+
+console.log(calcAvgHeight({
+  Matt: { height: 174, weight: 69 },
+  Jason: { height: 190, weight: 103 }
+}));
