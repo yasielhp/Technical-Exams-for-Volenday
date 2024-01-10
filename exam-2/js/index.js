@@ -21,5 +21,19 @@ calcAvgHeight({
 */
 
 function calcAvgHeight(data) {
-  // Calculate average height from received data. If no data, return null.
+
+  if (Object.keys(data).length === 0) {
+    console.log("There are no people in the data.");
+    return null;
+  }
+
+  let totalHeight = 0;
+  let count = 0;
+
+  for (let person in data) {
+    totalHeight += data[person].height;
+    count++;
+  }
+
+  return totalHeight / count;
 }
